@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - Trendify</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f7f8fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      width: 360px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #141414;
+    }
+¨¨    .logo span {
+      color: rgb(255, 165,0);
+    }
+
+    .logo span {
+      color: rgb(255, 165,0)
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .btn-register {
+      width: 100%;
+      padding: 12px;
+      background-color: orange;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 15px 0;
+    }
+
+    .btn-register:hover {
+      background-color: #e69600ec;
+    }
+
+    .btn-google {
+      width: 100%;
+      padding: 12px; 
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-google img {
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 18px;
+    }
+
+    .signin {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signin a {
+      color: rgba(255, 166, 0, 0.863);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signin a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <div class="logo"><span>TF</span> Trendify</div>
+
+    <h2>Criar conta</h2>
+    <p>Preencha os campos abaixo para se cadastrar.</p>
+
+    <form>
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Digite seu email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Palavra passe</label>
+        <input type="password" placeholder="Crie uma senha" required>
+      </div>
+
+      <div class="form-group">
+        <label>Confirmar palavra passe</label>
+        <input type="password" placeholder="Confirme sua senha" required>
+      </div>
+
+      <button type="submit" class="btn-register">Cadastrar</button>
+    </form>
+
+    <button class="btn-google">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+      Cadastrar com Google
+    </button>
+
+    <div class="signin">
+      Já tem conta? <a href="#">Entrar</a>
+    </div>
+  </div>
+
+</body>
+</html>
