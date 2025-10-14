@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-mail verificado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .icon {
+  background: orange;   /* cor do círculo */
+  color: white;          /* cor do ícone */
+  font-size: 24px;       /* tamanho do ícone */
+  width: 60px;           /* largura do círculo */
+  height: 60px;          /* altura do círculo */
+  display: flex;         /* centraliza o ícone */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;    /* deixa redondo */
+  margin: 0 auto 15px;   /* centraliza e dá espaço embaixo */
+}
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      background: orange;
+      color: white;
+    }
+    /* ========== TORNAR A TELA RESPONSIVA ========== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container, .form-container, .login-box, .cadastro-box {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"><i class="fas fa-check-circle"></i></div>
+    <h2>E-mail verificado!</h2>
+    <p>Seu e-mail foi confirmado com sucesso. Agora você já pode acessar sua conta.</p>
+    <button class="btn">Ir para Login</button>
+  </div>
+</body>
+</html>

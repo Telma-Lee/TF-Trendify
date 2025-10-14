@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esqueci a Senha</title>
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f8fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 360px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .icon {
+      background: orange;
+      color: white;
+      font-size: 28px;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border-color: orange;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: orange;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+    }
+    /* ========== TORNAR A TELA RESPONSIVA ========== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container, .form-container, .login-box, .cadastro-box {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Trendify</div>
+    <div class="icon"><i class="fas fa-lock"></i></div>
+    <h2>Esqueci minha senha</h2>
+    <p>Digite o seu e-mail abaixo para redefinir sua senha.</p>
+    <input type="email" placeholder="Digite seu e-mail" class="input-field">
+    <button class="btn">Enviar link</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-mail Verificado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    .logo {
+      font-family: "Georgia", serif;
+      font-style: italic;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      background-color: #ff9800;
+      color: white;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin: 0 auto 25px auto;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 12px;
+      background-color: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .progress-fill {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #ff9800, #ff5722);
+      box-shadow: 0px 0px 20px rgba(255,152,0,0.8);
+      border-radius: 20px;
+    }
+
+    .message {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .message span {
+      color: green;
+      margin-left: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e68900;
+    }
+    /* ========== TORNAR A TELA RESPONSIVA ========== */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container, .form-container, .login-box, .cadastro-box {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Trendify</div>
+    <div class="icon">📧</div>
+
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <div class="message">E-mail verificado <span>✔️</span></div>
+
+    <a href="login.html" class="btn">Ir para tela de login</a>
+  </div>
+</body>
+</html>
