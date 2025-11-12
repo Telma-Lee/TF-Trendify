@@ -108,7 +108,9 @@
       margin-top: 20px;
       font-size: 14px;
     }
-
+.p{
+  color: #e69500;
+}
     .signup a {
       color: orange;
       text-decoration: none;
@@ -209,6 +211,12 @@
     <div class="logo"><span>TF</span> Trendify</div>
     <h2>Entrar em Trendify</h2>
     <p>Bem vindo de volta! Por favor, inicie sessão para continuar.</p>
+    <p>
+      <a href="recuperar.html"></a>
+    </p>
+    
+   
+  
 
     <form>
       <div class="form-group">
@@ -218,21 +226,20 @@
 
       <div class="form-group">
         <label>Palavra passe</label>
-        <a href="#" class="forgot">Perdeu a senha?</a>
+        <a href="Esqueci-senha.html" class="forgot">Perdeu a senha?</a>
         <input type="password" placeholder="Introduza a senha" required>
       </div>
 
       <button type="submit" class="btn-login">Continuar</button>
     </form>
 
-    <button class="btn-google">
-      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
-      Continuar com Google
-    </button>
+    <button  class="btn-login" onclick="window.location.href='Home.html'">Entrar </button>
+    
 
-    <div class="signup">
-      Não tem conta? <a href="#">Cadastre-se</a>
-    </div>
+      <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="google-logo" style="width:20px; margin-right:8px;">
+      <p>Não tem conta? <a href="Cadastro.html">Cadastre-se</a></p>
+      
+    
   </div>
 </body>
 </html>

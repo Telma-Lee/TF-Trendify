@@ -7,76 +7,105 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 350px;
-      text-align: center;
-    }
-
-    .icon {
-  background: rgb(248, 163, 6);   /* cor do círculo */
-  color: white;          /* cor do ícone */
-  font-size: 24px;       /* tamanho do ícone */
-  width: 60px;           /* largura do círculo */
-  height: 60px;          /* altura do círculo */
-  display: flex;         /* centraliza o ícone */
-  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
   align-items: center;
-  border-radius: 50%;    /* deixa redondo */
-  margin: 0 auto 15px;   /* centraliza e dá espaço embaixo */
+  justify-content: center;
+  height: 100vh;
 }
-    
 
-    h2 {
-      margin: 10px 0;
-    }
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 380px;
+  padding: 30px;
+  text-align: center;
+}
 
-    p {
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 20px;
-    }
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
 
-    .btn {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 5px 0;
-    }
+.icon-circle {
+  background-color: #ff7a00;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
 
-    .btn-primary {
-      background: rgb(255, 165, 0);
-      color: white;
-    }
+.card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
-    .btn-secondary {
-      background: #f5f5f5;
-      color: black;
-      border: 1px solid #ccc;
-    }
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff7a00;
+}
+
+.btn-laranja, .btn-branco {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-laranja {
+  background-color: #ff7a00;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn-laranja:hover {
+  background-color: #e96e00;
+}
+
+.btn-branco {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-branco:hover {
+  background-color: #f3f3f3;
+}
+
     /* ========== TORNAR A TELA RESPONSIVA ========== */
 @media (max-width: 768px) {
   body {
@@ -118,15 +147,26 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="icon"><i class="fas fa-lock"></i></div>
+  <div class="card">
+    <div class="logo">Trendify</div>
+
+    <div class="icon-wrapper">
+      <div class="icon-circle">
+        <i class="fas fa-lock"></i>
+      </div>
+    </div>
+
     <h2>Esqueci minha senha</h2>
     <p>Para redefinir sua senha, informe o e-mail cadastrado na sua conta e lhe enviaremos um link com as instruções.</p>
+
     <form>
-      <input type="email" placeholder="E-mail" required>
-      <button class="btn btn-primary" type="submit">Próximo</button>
-      <button class="btn btn-secondary" type="button">Cancelar</button>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+      <button class="btn-laranja" type="button" onclick="window.location.href='Redefinir-senha.html'">Próximo</button>
+      <button class="btn-branco" type="button" onclick="window.location.href='Login.html'">Cancelar</button>
     </form>
   </div>
+
 </body>
 </html>

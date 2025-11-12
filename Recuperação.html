@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esqueci a Senha</title>
+  <title>Recuperação a Senha</title>
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -47,8 +47,19 @@
       align-items: center;
       border-radius: 50%;
       margin: 0 auto 20px;
+      
     }
 
+    label{
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 14px;
+      text-align: left;
+      width: 100%;
+      gap: 10px;
+    }
     h2 {
       margin-bottom: 10px;
       color: #222;
@@ -62,34 +73,62 @@
 
     .input-field {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 14px;
       box-sizing: border-box;
-      margin-bottom: 20px;
+      margin-bottom:5px;
       outline: none;
+      gap: 10px;
     }
 
     .input-field:focus {
       border-color: orange;
     }
+/* Contêiner dos botões */
+.botoes {
+  display: flex;
+  flex-direction: column; /* Deixa um em cima do outro */
+  gap: 10px; /* Espaçamento entre os botões */
+  width: 100%; /* Faz os botões ocuparem toda a largura */
+  margin-top: 20px;
+}
 
-    .btn {
-      width: 100%;
-      padding: 12px;
-      background: orange;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+/* Botão laranja */
+.btn-laranja {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
 
-    .btn:hover {
-      background: #e68900;
-    }
+/* Botão branco */
+.btn-branco {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Efeito hover */
+.btn-laranja:hover {
+  background-color: #e56d00;
+}
+
+.btn-branco:hover {
+  background-color: #f5f5f5;
+}
+
+    
     /* ========== TORNAR A TELA RESPONSIVA ========== */
 @media (max-width: 768px) {
   body {
@@ -135,9 +174,15 @@
     <div class="logo">Trendify</div>
     <div class="icon"><i class="fas fa-lock"></i></div>
     <h2>Esqueci minha senha</h2>
-    <p>Digite o seu e-mail abaixo para redefinir sua senha.</p>
-    <input type="email" placeholder="Digite seu e-mail" class="input-field">
-    <button class="btn">Enviar link</button>
+    <p>Para redefinir sua senha, informe o e-mail cadastrado na sua conta e lhe enviaremos um link com as instruções.</p>
+    <label>E-mail</label>
+     <input type="email" placeholder="Digite seu e-mail" class="input-field">
+     <div class="botoes">
+    <button class="btn-laranja" onclick="window.location.href='Redefinir-senha.html'">Próximo</button>
+    <button class="btn-branco" onclick="window.location.href='Login.html'">Cancelar</button>
+  </div>
+    
+  
   </div>
 </body>
 </html>

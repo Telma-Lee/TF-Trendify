@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    color: #222;
+    background-color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .logo span {
+    color: #ff7a00;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: #ff7a00;
+  }
+  
+  .icons i {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #333;
+  }
+  .icons i:hover {
+    color: #ff7a00;
+  }
+  
+  /* HERO */
+  .hero {
+    background-image: 
+      linear-gradient(rgba(255, 140, 0, 0.4), rgba(255, 140, 0, 0.4)),
+      url('https://plus.unsplash.com/premium_photo-1664202526047-405824c633e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* ocupa toda a tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* deixa o texto legível */
+  }
+  
+    
+  .hero .overlay {
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero h1 span {
+    color: #ff7a00;
+  }
+  .hero p {
+    margin: 10px 0 20px;
+  }
+  .hero .btn {
+    background: #ff7a00;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  .sobre-nos {
+    padding: 80px 20px;
+    background-color: #e4e0e0;
+  }
+  
+  .container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .texto-sobre {
+    flex: 1 1 45%;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .texto-sobre h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .texto-sobre p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+  }
+  
+  .galeria-sobre {
+    flex: 1 1 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .galeria-sobre img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria-sobre img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 900px) {
+    .container-sobre {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .texto-sobre, .galeria-sobre {
+      flex: 1 1 100%;
+    }
+  }
+  
+
+  
+  
+  /* ======= CLIENTES ======= */
+.clientes {
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.clientes h2 {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.clientes-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Lista */
+.clientes ul {
+  list-style: none;
+  flex: 1;
+  padding: 0;
+}
+
+.clientes li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.clientes li span {
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.clientes li .texto strong {
+  display: block;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.clientes li .texto p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Imagem à direita */
+.clientes-img {
+  flex: 0.8;
+  min-width: 280px;
+}
+
+.clientes-img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+  
+  
+
+
+  
+  /* PRODUTOS EM DESTAQUE */
+.produtos-destaque {
+  background: url("img/fundo-produtos.jpg") no-repeat center center/cover;
+  padding: 80px 10%;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+/* Fundo com leve camada azul-transparente sobre a imagem */
+.produtos-destaque::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(158, 197, 231, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.produtos-destaque h2,
+.produtos-destaque p {
+  position: relative;
+  z-index: 1;
+}
+
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.produto-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(3, 3, 3, 0.15);
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.produto-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.produto-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.produto-card .preco {
+  font-weight: bold;
+  color: #0a0a0a;
+  font-size: 16px;
+}
+
+.colecao {
+  padding: 60px 10%;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.colecao h2 {
+  margin-bottom: 40px;
+  font-size: 22px;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  position: relative; /* necessário para posicionar o preço e a etiqueta */
+  background: #e6e6e6;
+  border-radius: 15px;
+  padding: 20px;
+  width: 310px;
+  height: 400px; /* comprimento do card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Título e descrição */
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.card p {
+  font-size: 14px;
+  color: #141414;
+}
+
+/* Preço no canto superior direito */
+.preco {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: rgb(219, 219, 218);
+  color: rgb(26, 25, 25);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Etiqueta "Mais vendido" no canto superior esquerdo */
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  background: #faf9f8;
+  color: rgb(10, 10, 10);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+  
+
+
+
+
+  /* SEÇÃO NOVA COLEÇÃO */
+.nova-colecao {
+  background-color: #ff8800;
+  border-radius: 15px;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  max-width: 1150px;
+  margin: 60px auto;
+  height: 560px; /* Altura proporcional ao seu Figma */
+}
+
+.colecao-texto {
+  flex: 1;
+}
+
+.colecao-texto .subtitulo {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.colecao-texto h2 {
+  font-size: 42px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.colecao-texto .descricao {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  max-width: 350px;
+}
+
+.botao {
+  background-color: #fff;
+  color: #f19c3b;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #ffe5cc;
+}
+
+/* IMAGEM CIRCULAR */
+.colecao-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo {
+  width: 320px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  
+   
+  
+  /* RODAPÉ */
+  footer {
+    background: #111;
+    color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 10%;
+  }
+  footer .coluna {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  footer a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px 0;
+  }
+  footer a:hover {
+    color: #ff7a00;
+  }
+  footer .social i {
+    margin-right: 10px;
+  }
+  

@@ -36,6 +36,52 @@
     .logo span {
       color: rgb(255, 165,0)
     }
+    /* Estilo geral dos botões */
+button, .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Botão principal (laranja) */
+.btn-laranja {
+  background-color: #ff7a00;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-bottom: 12px; /* espaçamento entre os botões */
+}
+
+.btn-laranja:hover {
+  background-color: #e66d00;
+}
+
+/* Botão Google */
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-google:hover {
+  background-color: #f3f3f3;
+}
+
+/* Ícone Google dentro do botão */
+.btn-google img {
+  width: 20px;
+  height: 20px;
+}
+
     h2 {
       margin-bottom: 10px;
       color: #222;
@@ -182,18 +228,23 @@
         <input type="password" placeholder="Confirme sua senha" required>
       </div>
 
-      <button type="submit" class="btn-register">Cadastrar</button>
+      
     </form>
+    <!-- Botão de cadastro com Google -->
+    <button class="btn-laranja" onclick="window.location.href='Email-verificado.html'">Cadastrar</button>
 
     <button class="btn-google">
       <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
       Cadastrar com Google
     </button>
-
-    <div class="signin">
-      Já tem conta? <a href="#">Entrar</a>
-    </div>
+    
+    <p>Já tem conta? <a href="Login.html">Entrar</a></p>
+    
   
+  
+</button>
+
+
 </body>
 </html>
 

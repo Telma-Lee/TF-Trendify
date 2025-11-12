@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Senha Redefinida</title>
+  <title>Senha-redefinida</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,6 +15,26 @@
       align-items: center;
       height: 100vh;
     }
+    .btn-laranja {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7a00; /* Laranja Trendify */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-laranja:hover {
+  background-color: #e96e00; /* Laranja mais escuro ao passar o mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
 
     .container {
       text-align: center;
@@ -114,9 +134,9 @@
     <div class="logo">Trendify</div>
     <div class="icon">🔒</div>
 
-    <div class="message">Senha redefinida</div>
+    <div class="message">Senha-redefinida</div>
+    <button class="btn-laranja" onclick="window.location.href='Login.html'">Voltar para página de login</button>
 
-    <a href="login.html" class="btn">Voltar para página de login</a>
   </div>
 </body>
 </html>
